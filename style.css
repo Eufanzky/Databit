@@ -138,12 +138,20 @@ main {
     color: #757575;
 }
 /*Table from exchange section*/
+.main-tables-container{
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 .main-currency-table {
+    position: relative;
     width: 70%;
+    scroll-snap-align: center;
     min-width: 235px;
     max-width: 500px; 
     height: 360px;
-    margin: 0 auto;
+    margin: 0 10px;
     font-family: "Inter", sans-serif;
 }
 .main-currency-table .main-currency-table__title {
@@ -393,7 +401,7 @@ main {
     min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px 5px 0;
+    margin: 50px 15px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
